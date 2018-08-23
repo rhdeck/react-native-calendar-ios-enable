@@ -16,8 +16,8 @@ if (fs.existsSync(packagePath)) {
 }
 var iosPath = currentPath + "/ios";
 if (!fs.existsSync(iosPath)) {
-  console.log("Could not find ios in ", thisPath, iosPath);
-  console.log(fs.readdirSync(thisPath));
+  console.log("Could not find ios in ", currentPath, iosPath);
+  console.log(fs.readdirSync(currentPath));
   process.exit();
 }
 plists = glob.sync(iosPath + "/*/Info.plist");
