@@ -1,0 +1,29 @@
+{
+  "name": "react-native-calendar-ios-enable",
+  "version": "1.0.0",
+  "description": "Enable IOS calendar by setting privacy text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./bin/fixcalendar.js"
+  },
+  "rnpm": {
+    "commands": {
+      "postlink": "node node_modules/react-native-calendar-ios-enable/bin/fixcalendar.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhdeck/react-native-calendar-ios-enable.git"
+  },
+  "author": "Ray Deck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhdeck/react-native-calendar-ios-enable/issues"
+  },
+  "homepage": "https://github.com/rhdeck/react-native-calendar-ios-enable#readme",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "plist": "^2.1.0"
+  }
+}
