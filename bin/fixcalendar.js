@@ -24,7 +24,7 @@ plists = glob.sync(iosPath + "/*/Info.plist");
 plists.map(path => {
   const source = fs.readFileSync(path, "utf8");
   var o = plist.parse(source);
-  o.NSCalendarUsageDescription = privacyText;
+  o.NSCalendarsUsageDescription = privacyText;
   const xml = plist.build(o);
   fs.writeFileSync(path, xml);
 });
